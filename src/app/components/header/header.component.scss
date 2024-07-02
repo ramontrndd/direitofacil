@@ -1,0 +1,61 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px 10px;
+}
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a30000;
+}
+.bottom-header {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.bottom-header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: auto;
+  padding: 10px;
+}
+.bottom-header nav ul li a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.bottom-header nav ul li a:hover {
+  color: #ff0000;
+}
+.drop-hover {
+  position: relative;
+}
+.drop-hover .drop {
+  position: absolute;
+  background-color: #a30000;
+  height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.drop-hover:hover .drop {
+  height: auto;
+  padding: 10px 0px;
+  transition: 0.5s;
+}
+
+.bi-search {
+  margin-left: 30px;
+}
+.bi-tiktok,
+.bi-facebook,
+.bi-instagram,
+.bi-twitter {
+  margin: 0 10px;
+}
