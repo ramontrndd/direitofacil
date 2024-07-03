@@ -1,13 +1,15 @@
-<app-header></app-header>
 
-<app-carousel
-  [images]="images"
-  [showIndicator]="true"
-  [animationSpeed]="300"
-  [autoPlay]="true"
-  [autoPlayInterval]="5000"
-  [showNavigators]="true"
->
-</app-carousel>
+<div [ngClass]="themeService.themeSignal()">
+  <app-header></app-header>
 
-<router-outlet></router-outlet>
+  <app-carousel
+    [images]="images"
+    [showIndicator]="true"
+    [animationSpeed]="500"
+    [autoPlay]="true"
+    [autoPlayInterval]="5000"
+    [showNavigators]="true"
+  >
+  </app-carousel>
+  <router-outlet></router-outlet>
+</div>

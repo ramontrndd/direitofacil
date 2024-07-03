@@ -1,9 +1,10 @@
 import { HeaderComponent } from './components/header/header.component';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -42,4 +43,5 @@ export class AppComponent {
       imageAlt: 'person2',
     },
   ];
+  themeService: ThemeService = inject(ThemeService);
 }

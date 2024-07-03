@@ -1,8 +1,11 @@
+:host * {
+  transition: all 200ms ease;
+}
 .top-header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 5px 10px;
+  justify-content: space-between;
+
 }
 .interface {
   display: flex;
@@ -58,5 +61,11 @@
 .bi-facebook,
 .bi-instagram,
 .bi-twitter {
-  margin: 0 10px;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+.header-redesociais {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
