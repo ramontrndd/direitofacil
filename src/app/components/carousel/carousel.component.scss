@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  width: 100%;
+}
+.bi {
+  font-size: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.slides {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: opacity 0.2s ease-in;
+  }
+  .nextButton,
+  .previousButton {
+    position: absolute;
+    top: 50%;
+    border: 0px;
+    background-color: transparent;
+
+    color: #ffffff80;
+  }
+  .nextButton {
+    right: 5px;
+  }
+  .previousButton {
+    left: 5px;
+  }
+  #indicators {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 0.3rem;
+    width: 120px;
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ffffff71;
+      display: inline-block;
+      margin: 0 3px;
+      cursor: pointer;
+      &.active {
+        background-color: #0000007c;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
